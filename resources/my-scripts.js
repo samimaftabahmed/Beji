@@ -3,6 +3,44 @@ window.onload = function () {
     getDistrict(1);
 };
 
+function myOK() {
+    let today = moment().format('DD-MM-YYYY');
+    let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
+    let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
+
+    makeRequest(url, 4);
+    makeRequest(url2, 4);
+}
+
+function my(response) {
+    for (let center of response.data.centers) {
+        for (let session of center.sessions) {
+            if (session.available_capacity > 0) {
+                // && session.min_age_limit < 45
+                console.log("vaccine available", session);
+            }
+        }
+    }
+}
+
+
+function choiceResponse(response, choice) {
+    switch (choice) {
+        case 1:
+            processState(response);
+            break;
+        case 2:
+            processDistrict(response);
+            break;
+        case 3:
+            processMain(response);
+            break;
+        case 4:
+            my(response);
+            break;
+    }
+}
+
 function processState(response) {
     let stateSelect = document.getElementById("state");
     console.log(response);
@@ -14,6 +52,7 @@ function processState(response) {
 function processDistrict(response) {
     let districtSelect = document.getElementById("district");
     console.log(response);
+    districtSelect.children = null;
     for (let district of response.data.districts) {
         addOptions(districtSelect, district.district_name, district.district_id);
     }
@@ -35,6 +74,7 @@ function getDistrict(choice) {
         let url = "resources/districts.json";
         console.log("url: ", url);
         makeRequest(url, 2);
+
     } else if (choice === 2) {
         let stateSelect = document.getElementById("state");
         let url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/" + stateSelect.value;
@@ -66,69 +106,17 @@ Choices:
 3 - main
 */
 function makeRequest(url, choice) {
-
-    if (choice === 1) {
-        axios.get(url, {headers: {'Access-Control-Allow-Origin': '*'}})
-            .then(function (response) {
-                console.log("request success");
-                choiceResponse(response, choice);
-            })
-            .catch(function (error) {
-                console.log("request failed", error);
-            });
-    } else {
-        /*
-        "Access-Control-Allow-Origin": "*",
-            "accept-encoding": "gzip, deflate, br",
-            "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-            "if-none-match": 'W/"599a-aA5u7qInJS1ww78mZ2ARvwiHM5A"',
-            "origin": "https://www.cowin.gov.in",
-            "referer": "https://www.cowin.gov.in/",
-            "sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-            "sec-ch-ua-mobile": "?0",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "cross-site",
-            "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"
-        */
-        /*
-        "Host":"cdn-api.co-vin.in",
-
-        */
-
-        let myheaders = {
-            "accept": "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-        }
-        axios.get(url, {headers: myheaders})
-            .then(function (response) {
-                console.log("request success");
-                choiceResponse(response, choice);
-            })
-            .catch(function (error) {
-                console.log("request failed", error);
-            });
-
-        axios.get(url, {headers: myheaders})
-            .then(function (response) {
-                console.log("request success", response);
-            })
-            .catch(function (error) {
-                console.log("request failed", error);
-            });
+    let myheaders = {
+        "accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
     }
-}
-
-function choiceResponse(response, choice) {
-    switch (choice) {
-        case 1:
-            processState(response);
-            break;
-        case 2:
-            processDistrict(response);
-            break;
-        case 3:
-            processMain(response);
-            break;
-    }
+    axios.get(url, {headers: myheaders})
+        .then(function (response) {
+            console.log("request success");
+            choiceResponse(response, choice);
+        })
+        .catch(function (error) {
+            console.log("request failed", error);
+        });
 }
 
