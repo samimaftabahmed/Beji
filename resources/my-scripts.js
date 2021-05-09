@@ -20,8 +20,12 @@ function myOK() {
     let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
     let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
 
-    makeRequest(url, 4);
-    makeRequest(url2, 4);
+    let timeout = (30 * 60 * 1000) + 5; // minutes * seconds * milli + milli
+
+    setInterval(function () {
+        makeRequest(url, 4);
+        makeRequest(url2, 4);
+    }, timeout);
 }
 
 function pass() {
@@ -42,10 +46,9 @@ function my(response) {
         let htmlTableRowElement = document.createElement("tr");
 
         for (let session of center.sessions) {
-            if (session.available_capacity > 0) {
+            if (session.available_capacity > 0 && session.min_age_limit < 45) {
+
                 playAudio();
-                // && session.min_age_limit < 45
-                console.log("vaccine available", session);
 
                 let name = document.createElement("td");
                 let address = document.createElement("td");
