@@ -1,4 +1,13 @@
 let myTAble = document.getElementById("mybody");
+var audioPlayer = document.getElementById("myAudio");
+
+function playAudio() {
+    audioPlayer.play();
+}
+
+function pauseAudio() {
+    audioPlayer.pause();
+}
 
 window.onload = function () {
     getState();
@@ -34,6 +43,7 @@ function my(response) {
 
         for (let session of center.sessions) {
             if (session.available_capacity > 0) {
+                playAudio();
                 // && session.min_age_limit < 45
                 console.log("vaccine available", session);
 
