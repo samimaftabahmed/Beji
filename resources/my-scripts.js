@@ -20,7 +20,7 @@ function myOK() {
     let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
     let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
 
-    let timeout = (30 * 60 * 1000) + 5; // minutes * seconds * milli + milli
+    let timeout = (3 * 60 * 1000) + 2; // minutes * seconds * milli + milli
 
     setInterval(function () {
         makeRequest(url, 4);
