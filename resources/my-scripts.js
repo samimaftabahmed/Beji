@@ -13,6 +13,17 @@ function myOK() {
     makeRequest(url2, 4);
 }
 
+function pass() {
+    let pass = document.getElementById("pass");
+    if (pass.text === "zang") {
+        let hiddenDiv = document.getElementById("hidden-div");
+        let showDiv = document.getElementById("show-div");
+        hiddenDiv.setAttribute("display", "block");
+        showDiv.setAttribute("display", "none")
+
+    }
+}
+
 function my(response) {
     console.log("Processing response myOK:")
     for (let center of response.data.centers) {
