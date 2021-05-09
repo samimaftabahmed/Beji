@@ -15,7 +15,7 @@ function myOK() {
 
 function pass() {
     let pass = document.getElementById("pass");
-    if (pass.text === "zang") {
+    if (pass.value === "zang") {
         let hiddenDiv = document.getElementById("hidden-div");
         let showDiv = document.getElementById("show-div");
         hiddenDiv.setAttribute("display", "block");
@@ -28,8 +28,7 @@ function my(response) {
     console.log("Processing response myOK:")
     for (let center of response.data.centers) {
         for (let session of center.sessions) {
-            if (session.available_capacity > 0) {
-                // && session.min_age_limit < 45
+            if (session.available_capacity > 0 && session.min_age_limit < 45) {
                 console.log("vaccine available", session);
             }
         }
@@ -119,6 +118,7 @@ Choices:
 3 - main
 */
 function makeRequest(url, choice) {
+    console.log(url);
     let myheaders = {
         "accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
