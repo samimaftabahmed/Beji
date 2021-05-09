@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beji</title>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+
+<label for="state">Select State:</label>
+<select name="state" id="state" onchange="getDistrict(2)">
+    <option selected>Select state</option>
+</select>
+
+<br>
+<br>
+
+<label for="district">Select District:</label>
+<select name="district" id="district">
+    <option selected>Select district</option>
+</select>
+
+<br>
+<br>
+
+<button>OK</button>
+
+<br>
+<br>
+<br>
+
+<button>My OK</button>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" crossorigin="anonymous"></script>
+<script src="resources/my-scripts.js" crossorigin="anonymous"></script>
+</body>
+</html>
