@@ -32,10 +32,9 @@ function my(response) {
 
         let htmlTableRowElement = document.createElement("tr");
 
-
         for (let session of center.sessions) {
-            if (session.available_capacity > 0 ) {
-            // && session.min_age_limit < 45
+            if (session.available_capacity > 0) {
+                // && session.min_age_limit < 45
                 console.log("vaccine available", session);
 
                 let name = document.createElement("td");
@@ -48,12 +47,15 @@ function my(response) {
                 htmlTableRowElement.appendChild(address);
                 htmlTableRowElement.appendChild(feeType);
 
+                let age = document.createElement("td");
                 let vaccine = document.createElement("td");
                 let quantity = document.createElement("td");
                 let onDate = document.createElement("td");
+                age.textContent = session.min_age_limit + "+";
                 vaccine.textContent = session.vaccine;
                 quantity.textContent = session.available_capacity;
                 onDate.textContent = session.date;
+                htmlTableRowElement.appendChild(age);
                 htmlTableRowElement.appendChild(vaccine);
                 htmlTableRowElement.appendChild(quantity);
                 htmlTableRowElement.appendChild(onDate);

@@ -14,14 +14,17 @@
             display: table !important;
         }
     </style>
-
-
 </head>
 <body>
 <br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-6 offset-3">
+
+            <audio id="myAudio" controls loop>
+                <source src="resources/music.mp3" type="audio/mpeg">
+            </audio>
+
             <div id="show-div" style="display: block">
                 <label for="pass">Passphrase:</label>
                 <input type="text" id="pass">
@@ -54,6 +57,7 @@
                         <td>Name</td>
                         <td>Address</td>
                         <td>Fee Type</td>
+                        <td>Age</td>
                         <td>Vaccine</td>
                         <td>Quantity</td>
                         <td>Date</td>
