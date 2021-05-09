@@ -10,6 +10,13 @@ function pauseAudio() {
 }
 
 window.onload = function () {
+    // 'Cache-Control': 'no-cache',
+    // axios.defaults.headers = {
+    //     'Pragma': 'no-cache',
+    //     'Expires': '0',
+    //     "accept": "application/json, text/plain, */*",
+    //     "Content-Type": "application/json",
+    // };
     getState();
     getDistrict(1);
 };
@@ -162,9 +169,14 @@ Choices:
 */
 function makeRequest(url, choice) {
     console.log(url);
+    let random1 = Math.random() * 10000;
+    let random2 = Math.random() * 100;
+    let randomToken = random1 * random2;
+
     let myheaders = {
         "accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
+        "app-token": "" + randomToken
     }
     axios.get(url, {headers: myheaders})
         .then(function (response) {
