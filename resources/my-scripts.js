@@ -18,9 +18,10 @@ function pass() {
     if (pass.value === "zang") {
         let hiddenDiv = document.getElementById("hidden-div");
         let showDiv = document.getElementById("show-div");
+        hiddenDiv.attributes = null;
+        showDiv.attributes = null;
         hiddenDiv.setAttribute("display", "block");
         showDiv.setAttribute("display", "none")
-
     }
 }
 
