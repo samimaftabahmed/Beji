@@ -24,8 +24,10 @@ window.onload = function () {
 function myOK() {
     console.log("myOK ", new Date());
     let today = moment().format('DD-MM-YYYY');
-    let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
-    let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
+    // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
+    // let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
+    let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=49" + today;
+    let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=50" + today;
 
     let timeout = (3 * 60 * 1000) + 2; // minutes * seconds * milli + milli
 
@@ -169,14 +171,13 @@ Choices:
 */
 function makeRequest(url, choice) {
     console.log(url);
-    let random1 = Math.random() * 10000;
-    let random2 = Math.random() * 100;
-    let randomToken = random1 * random2;
+    // let random1 = Math.random() * 10000;
+    // let random2 = Math.random() * 100;
+    // let randomToken = random1 * random2;
 
     let myheaders = {
         "accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
-        "app-token": "" + randomToken
     }
     axios.get(url, {headers: myheaders})
         .then(function (response) {
