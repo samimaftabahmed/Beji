@@ -96,10 +96,8 @@ function makeRequest(url, choice) {
         */
 
         let myheaders = {
-            "Accept-Language": "en_US",
             "accept": "application/json, text/plain, */*",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
         }
         axios.get(url, {headers: myheaders})
             .then(function (response) {
