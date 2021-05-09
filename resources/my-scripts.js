@@ -1,4 +1,4 @@
-let myTAble = document.getElementById("myTable");
+let myTAble = document.getElementById("mybody");
 
 window.onload = function () {
     getState();

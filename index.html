@@ -10,11 +10,8 @@
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-
 <br>
-<br>
-
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-6 offset-3">
             <div id="show-div" style="display: block">
@@ -27,36 +24,39 @@
                 <select name="state" id="state" onchange="getDistrict(2)">
                     <option selected>Select state</option>
                 </select>
-
                 <br> <br>
-
                 <label for="district">Select District:</label>
                 <select name="district" id="district">
                     <option selected>Select district</option>
                 </select>
-
                 <br> <br>
-
                 <button class="btn btn-outline-primary">OK</button>
-
-                <br> <br> <br>
-
+                <br> <br>
                 <button class="btn btn-outline-success" onclick="myOK()">My OK</button>
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col">
-            <table class="table table-responsive table-bordered" id="myTable">
-                <tr>
-                    <td>Name</td>
-                    <td>Address</td>
-                    <td>Fee Type</td>
-                    <td>Vaccine</td>
-                    <td>Quantity</td>
-                    <td>Date</td>
-                </tr>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-responsive" id="myTable">
+                    <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Address</td>
+                        <td>Fee Type</td>
+                        <td>Vaccine</td>
+                        <td>Quantity</td>
+                        <td>Date</td>
+                    </tr>
+                    </thead>
+
+                    <tbody id="mybody">
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
