@@ -22,6 +22,9 @@ window.onload = function () {
 };
 
 function myOK() {
+    let started = document.getElementById("started");
+    started.style.cssText = "background-color: greenyellow; color: black; display: block;"
+
     console.log("myOK ", new Date());
     let today = moment().format('DD-MM-YYYY');
     // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
@@ -29,8 +32,10 @@ function myOK() {
     let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=49" + today;
     let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=50" + today;
 
-    let timeout = (3 * 60 * 1000) + 2; // minutes * seconds * milli + milli
+    makeRequest(url, 4);
+    makeRequest(url2, 4);
 
+    let timeout = (3 * 60 * 1000) + 1; // minutes * seconds * milli + milli
     setInterval(function () {
         makeRequest(url, 4);
         makeRequest(url2, 4);
