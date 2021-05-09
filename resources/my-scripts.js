@@ -1,3 +1,5 @@
+let myTAble = document.getElementById("myTable");
+
 window.onload = function () {
     getState();
     getDistrict(1);
@@ -27,12 +29,38 @@ function pass() {
 
 function my(response) {
     console.log("Processing response myOK:")
+
     for (let center of response.data.centers) {
+
+        let htmlTableRowElement = document.createElement("tr");
+        let name = document.createElement("td");
+        let address = document.createElement("td");
+        let feeType = document.createElement("td");
+        name.textContent = center.name;
+        address.textContent = center.address;
+        feeType.textContent = center.fee_type;
+
+        htmlTableRowElement.appendChild(name);
+        htmlTableRowElement.appendChild(address);
+        htmlTableRowElement.appendChild(feeType);
+
         for (let session of center.sessions) {
             if (session.available_capacity > 0 && session.min_age_limit < 45) {
                 console.log("vaccine available", session);
+
+                let vaccine = document.createElement("td");
+                let quantity = document.createElement("td");
+                let onDate = document.createElement("td");
+                vaccine.textContent = session.vaccine;
+                quantity.textContent = session.available_capacity;
+                onDate.textContent = session.date;
+
+                htmlTableRowElement.appendChild(vaccine);
+                htmlTableRowElement.appendChild(quantity);
+                htmlTableRowElement.appendChild(onDate);
             }
         }
+        myTAble.appendChild(htmlTableRowElement);
     }
 }
 
