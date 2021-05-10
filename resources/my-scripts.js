@@ -38,7 +38,7 @@ function myOK() {
     let timeout = (3 * 60 * 1000) + 1; // minutes * seconds * milli + milli
     setInterval(function () {
         makeRequest(url, 4);
-        makeRequest(url2, 4);
+//        makeRequest(url2, 4);
     }, timeout);
 }
 
