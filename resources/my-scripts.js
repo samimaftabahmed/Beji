@@ -1,5 +1,10 @@
 let myTAble = document.getElementById("mybody");
 let audioPlayer = document.getElementById("myAudio");
+let successStatuses = document.getElementById("successStatuses");
+let cachedStatuses = document.getElementById("cachedStatuses");
+let errorStatuses = document.getElementById("errorStatuses");
+let totalRequestCount = document.getElementById("totalRequestCount");
+
 
 function playAudio() {
     audioPlayer.play();
@@ -165,6 +170,33 @@ function addOptions(element, text, value) {
     element.add(option);
 }
 
+function setTotalRequestCount() {
+    console.log("Total Count set");
+    let text = totalRequestCount.textContent;
+    text = parseInt(text) + 1;
+    totalRequestCount.textContent = text;
+}
+
+function setStatusCount(code) {
+
+    console.log("Parsed Status: " + code);
+    code = parseInt(code);
+
+    if (code >= 200 && code < 300) {
+        let text = successStatuses.textContent;
+        text = parseInt(text) + 1;
+        successStatuses.textContent = text;
+    } else if (code >= 300 && code < 400) {
+        let text = cachedStatuses.textContent;
+        text = parseInt(text) + 1;
+        cachedStatuses.textContent = text;
+    } else {
+        let text = errorStatuses.textContent;
+        text = parseInt(text) + 1;
+        errorStatuses.textContent = text;
+    }
+}
+
 /*
 Choices:
 1 - state
@@ -173,10 +205,6 @@ Choices:
 */
 function makeRequest(url, choice) {
     console.log(url);
-    // let random1 = Math.random() * 10000;
-    // let random2 = Math.random() * 100;
-    // let randomToken = random1 * random2;
-
     let myheaders = {
         "accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
@@ -184,10 +212,15 @@ function makeRequest(url, choice) {
     axios.get(url, {headers: myheaders})
         .then(function (response) {
             console.log("request success");
+            setStatusCount(response.status);
             choiceResponse(response, choice);
         })
         .catch(function (error) {
-            console.log("request failed", error);
+            setStatusCount(error.response.status);
+            console.log("request failed: ", error.response);
+        })
+        .finally(function () {
+            setTotalRequestCount();
         });
 }
 

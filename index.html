@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon"/>
-    <title>My Beji</title>
-    <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <title>Beji Notifier</title>
+    <link rel="stylesheet" href="resources/bootstrap.css">
 
     <style>
         .table-responsive {
@@ -59,19 +59,24 @@
             </div>
             <br>
             <div>
-                Number of requests done: <label>0</label>
+                Number of requests done: &nbsp; <label id="totalRequestCount">0</label>
             </div>
             <br>
             <div class="row">
-                <div class="col-6">
-                    Success Requests
+                <div class="col-4">
+                    Status 200:
                     <br><br>
-                    <label>5</label>
+                    <label id="successStatuses">0</label>
                 </div>
-                <div class="col-6">
-                    Failed Requests
+                <div class="col-4">
+                    Status 300:
                     <br><br>
-                    <label>1</label>
+                    <label id="cachedStatuses">0</label>
+                </div>
+                <div class="col-4">
+                    Status 400+:
+                    <br><br>
+                    <label id="errorStatuses">0</label>
                 </div>
             </div>
 
@@ -104,9 +109,9 @@
     </div>
 </div>
 
-<script src="resources/jquery.min.js"></script>
-<script src="resources/bootstrap.min.js"></script>
-<script src="resources/axios.min.js"></script>
+<script src="resources/jquery.js"></script>
+<script src="resources/bootstrap.js"></script>
+<script src="resources/axios.js"></script>
 <script src="resources/my-scripts.js" crossorigin="anonymous"></script>
 <script src="resources/moment.js" crossorigin="anonymous"></script>
 </body>
