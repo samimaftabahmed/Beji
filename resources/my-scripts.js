@@ -22,14 +22,16 @@ window.onload = function () {
 function myOK(age) {
     ageCode = parseInt(age);
     let started = document.getElementById("started");
-    started.style.cssText = "background-color: greenyellow; color: black; display: block;"
+    started.style.cssText = "background-color: #444444; color: lightgreen; display: block; text-align: center; "
 
     console.log("myOK ", new Date());
     let today = moment().format('DD-MM-YYYY');
     // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
     // let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
     let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=49&date=" + today;
-    let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=50&date=" + today;
+    // let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=50&date=" + today;
+
+    // let url = "resources/test-response.json";
 
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
@@ -61,42 +63,13 @@ function my(response) {
             // if (session.available_capacity > 0) {
             if (true) {
                 playAudio();
-
                 if (ageCode === 0 && age === 18) {
                     rowCreator(center, session);
                 } else if (ageCode === 1 && age === 45) {
                     rowCreator(center, session);
-                } else {
+                } else if (ageCode === 2) {
                     rowCreator(center, session);
                 }
-
-
-                // let htmlTableRowElement = document.createElement("tr");
-                // let name = document.createElement("td");
-                // let address = document.createElement("td");
-                // let feeType = document.createElement("td");
-                // let age = document.createElement("td");
-                // let vaccine = document.createElement("td");
-                // let quantity = document.createElement("td");
-                // let onDate = document.createElement("td");
-                //
-                // name.textContent = center.name;
-                // address.textContent = center.address;
-                // feeType.textContent = center.fee_type;
-                // age.textContent = session.min_age_limit + "+";
-                // vaccine.textContent = session.vaccine;
-                // quantity.textContent = session.available_capacity;
-                // quantity.style.cssText = "quantity-highlight";
-                // onDate.textContent = session.date;
-                //
-                // htmlTableRowElement.appendChild(name);
-                // htmlTableRowElement.appendChild(address);
-                // htmlTableRowElement.appendChild(quantity);
-                // htmlTableRowElement.appendChild(vaccine);
-                // htmlTableRowElement.appendChild(age);
-                // htmlTableRowElement.appendChild(onDate);
-                // htmlTableRowElement.appendChild(feeType);
-                // myTAble.appendChild(htmlTableRowElement);
             }
         }
     }
@@ -118,7 +91,7 @@ function rowCreator(center, session) {
     age.textContent = session.min_age_limit + "+";
     vaccine.textContent = session.vaccine;
     quantity.textContent = session.available_capacity;
-    quantity.style.cssText = "quantity-highlight";
+    quantity.className = "quantity-highlight";
     onDate.textContent = session.date;
 
     htmlTableRowElement.appendChild(name);

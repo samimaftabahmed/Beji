@@ -1,0 +1,1826 @@
+{
+  "centers": [
+    {
+      "center_id": 584032,
+      "name": "PANDU FRU",
+      "address": "PHC Pandu PO Maligaon District Kamrup Metropolitan",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781012,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "d88f7dc7-5787-4fa7-af08-d6ecc5f107c4",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "7d1a9b9c-1830-41b4-94fe-aca05c135269",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 616683,
+      "name": "Police Hospital Panbazar",
+      "address": "Panbazar",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781001,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "e16326f5-d818-46fb-9eb2-973d3a494c25",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVAXIN",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 604148,
+      "name": "GMCH Guwahati",
+      "address": "Bhangagarh",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781005,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "9e72d8ae-6cac-4535-a37c-2e4e2f30d015",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "7372d532-cd0b-4ba3-9395-6b3b57d7349d",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 125200,
+      "name": "Capital SD",
+      "address": "SD Capital Lastgate Assam",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781006,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "9a2d8058-fa19-4485-a75f-a8bcdaf01c32",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "17659840-05f4-4f43-9cb3-fff2d612f33c",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123172,
+      "name": "PANIKHAITI MPHC",
+      "address": "Panikhaity",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Sonapur Block",
+      "pincode": 781150,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "8ec28ba9-7a87-4136-a69d-9b436fc7e7e2",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123260,
+      "name": "KAHILIPARA UPHC",
+      "address": "SD Capital Lastgate Assam",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781006,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "e20743aa-2ddb-4156-9a2b-69c7dbbadb4f",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 193546,
+      "name": "PANDUNATH UPHC",
+      "address": "PHC Pandu PO Maligaon District Kamrup Metropolitan",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781012,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "40774f10-5984-4843-939a-7aa342d29c89",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 122943,
+      "name": "BIRKUCHI UPHC",
+      "address": "Chandmari",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "926c2b00-b13f-44f4-888c-a4987f288e87",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 563012,
+      "name": "Sonapur PHC",
+      "address": "Sonapur",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Sonapur Block",
+      "pincode": 782402,
+      "lat": 26,
+      "long": 92,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "de9c4248-6385-49a3-b14d-2d722c18d918",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "ef03a625-1e4a-4a3f-ba6d-3378822c2b90",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123089,
+      "name": "SERABHATI UPHC",
+      "address": "Dhirenpara",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781016,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "13ec5ada-5181-4cb7-9a2e-36679449f3d0",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 611598,
+      "name": "GARIGAONSD",
+      "address": "GARIGAON",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781012,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "c1c06320-f94e-4ac5-b54a-353518e74a1d",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 669844,
+      "name": "HENGRABARI MU COVAXIN",
+      "address": "HENGRABARI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781036,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "50a3bfb1-5e70-4949-8858-2a149ce4adb5",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVAXIN",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 139257,
+      "name": "Choonsali UPHC",
+      "address": "Chandmari",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "cbb33cb9-1220-4f35-9d2b-beb00f8a13c5",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694411,
+      "name": "Guwahati Refinery High School",
+      "address": "NOONMATI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781020,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "3f4a4712-1768-450a-b693-a55daf3dbee0",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "a3bfc4a1-fab8-444f-82bd-357d86d935a1",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123019,
+      "name": "Kamakhya SD",
+      "address": "Kamakhya",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781010,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "83ad1561-9119-440b-af73-155e72944002",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "9be46fe8-1c16-4cdd-81eb-7cb1f00196e2",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695939,
+      "name": "SABITRI BHARALI HIGH SCHOOL",
+      "address": "ODALBAKRA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781034,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "8489ca75-8d8e-44ef-9a78-c0a938e1f3c9",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "6c3e5fb0-e10e-4393-a038-84263c13d0bb",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 643816,
+      "name": "NOTBOMA MPHC",
+      "address": "NOTBOMA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781019,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "a2f86342-fe48-4542-b8b1-5f490491f7e3",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "9dbbd4b4-e5ef-48aa-b21e-e1ffa9851b96",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 585360,
+      "name": "Satgaon UHC",
+      "address": "Satgaon",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781026,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "b262d007-7760-4e9c-8e6e-2145c485f510",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 193556,
+      "name": "West Guwahati SD",
+      "address": "Shantipur Hill Side PO Bharalu",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781009,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "7f36be94-bacb-4386-b3a7-c26c14db230d",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "9e415fcc-b9c3-42b9-9ec2-93f07f9f905a",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 193551,
+      "name": "GOTANAGAR UPHC",
+      "address": "PHC Pandu PO Maligaon District Kamrup Metropolitan",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781012,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "c195bc46-6d0d-42eb-bb9a-3b9b53f3b5af",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 643893,
+      "name": "HATIGARH CHARIALI UPHC",
+      "address": "HATIGARH",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781021,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "752733ed-565f-4b2b-9d9f-45037a657d37",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 643903,
+      "name": "MATHGHARIA UPHC",
+      "address": "MATHGHARIA UPHC",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781026,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "e2629a17-cce0-4adc-9d5e-f5e7efb2f342",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 598246,
+      "name": "East Ghy SD",
+      "address": "Chandmari",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "4525a7d8-bc48-4cf5-8261-6f7d141cf2a0",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        },
+        {
+          "session_id": "5821705a-7c93-4d63-aeb4-91ff4bedeb22",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 584047,
+      "name": "Ulubari UHC",
+      "address": "UHC Ulubari Opposite Prag News Channel Guwahati",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781007,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "73e6b108-5b4f-4172-80ca-43f874577020",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 610141,
+      "name": "KHARGHULI PHC",
+      "address": "KHARGHULI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781004,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "105f14cc-d937-4a3a-9891-27c5826ee259",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 139283,
+      "name": "Gandhibasti UPHC",
+      "address": "Chandmari",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "e19c6cff-9d0e-433a-a1e2-309db3fb90fd",
+          "date": "11-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694520,
+      "name": "SATGAON HIGH SCHOOL",
+      "address": "SATGAON",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781027,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "1ae7c8b7-03ef-4fff-b834-a13481be5759",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123314,
+      "name": "Mahendra Mohan Choudhury Hos.",
+      "address": "Panbazar",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781001,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "85045898-85dc-409b-902b-4c01aa6103cc",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695814,
+      "name": "KAMRUP ACADEMY",
+      "address": "CHENIKUTHI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "61f88317-fcfe-4e69-aed3-ed85812b9803",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694389,
+      "name": "MAIDAM VIDYAPEETH ME SCHOOL",
+      "address": "GUWAHATI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781028,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "1f9cc56d-640b-44e5-8c0d-658f588a2669",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695926,
+      "name": "PRAGJYOTI EYE CARE",
+      "address": "GEETANAGAR",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781011,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "8acfb41a-ef80-420e-b132-e4a0fc53e0ac",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 696253,
+      "name": "KAMAKHYA HS SCHOOL",
+      "address": "KAMAKHYA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781010,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "dfb1caa1-3664-4919-af7e-8fa2cad4f1cf",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123151,
+      "name": "KHETRI CHC",
+      "address": "Khetri",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Sonapur Block",
+      "pincode": 782403,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "653516f3-4bef-4dff-933a-17737b918476",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123032,
+      "name": "Dhirenpara FRU",
+      "address": "Dhirenpara",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781025,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "0571d347-92b6-4e80-974b-0a6ca552740f",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694537,
+      "name": "DAKHIN GAON HS",
+      "address": "KAHILIPARA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781036,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "19ee6634-450f-4dd4-ae0d-7c315c6e993e",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 577263,
+      "name": "NF RAILWAY",
+      "address": "MALIGAON",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781011,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "d30b2226-fa57-4ef8-8cb4-59ee406ab1a3",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695915,
+      "name": "GEETANAGAR ME SCHOOL.",
+      "address": "GEETANAGAR",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781021,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "90d80a14-65fe-4933-b0a3-1e4db53c3112",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694539,
+      "name": "PASCHIM BORAGAON LP SCHOOL",
+      "address": "BORAGAON",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781035,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "176b7853-0d8f-412a-90fb-6a05670112bc",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 123268,
+      "name": "Khanapara SD",
+      "address": "SD Khanpara Guwahati Assam",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781022,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "15:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "4b96af63-97ed-4d9e-a55b-af386d17d5f2",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-03:00PM"
+          ]
+        },
+        {
+          "session_id": "1fcfc327-7940-419d-a3cb-0b2cca4987a3",
+          "date": "13-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-03:00PM"
+          ]
+        },
+        {
+          "session_id": "4b166ced-1c5c-4353-b872-93db75ab39f1",
+          "date": "14-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-03:00PM"
+          ]
+        },
+        {
+          "session_id": "231036b1-7752-424e-aac6-570eed7fd73c",
+          "date": "15-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-03:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695959,
+      "name": "PRAGJYOTISH COLLEGE",
+      "address": "BHARALUMUKH",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781009,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "6e3c661a-513e-4e84-bfe4-fd0253340736",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694543,
+      "name": "RG BARUAH COLLEGE",
+      "address": "FATASIL AMBARI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781025,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "d8e3b840-09dd-42a8-9892-f6c9279d72e0",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695662,
+      "name": "ULUBARI HS",
+      "address": "ULUBARI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781007,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "b0f83f7a-2639-49fb-b333-4ad02b16537b",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695963,
+      "name": "PANDU ADARSHA HIGH SCHOOL",
+      "address": "PANDU",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781012,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "f0b9b2f7-2960-497e-9d59-da5401accc7a",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694545,
+      "name": "GANESHPARA LP SCHOOL",
+      "address": "DHIRENPARA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781025,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "d5ee26ea-c630-4be5-a238-cc67d876d3a4",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 588489,
+      "name": "REFINERY HOSPITAL NOONMATI",
+      "address": "Noonmati",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781022,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "61dbcdd0-e2bc-4d45-a9fe-4eeb96874929",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695961,
+      "name": "SONARAM HIGH SCHOOL",
+      "address": "BHARALUMUKH",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781009,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "cb0780ea-196f-4f68-804b-4c1fde8fd3b2",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695921,
+      "name": "RAJGARH HIGH SCHOOL",
+      "address": "RAJGARH",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "db7848eb-a7c0-4d3a-aae1-c9e3a2fbb15d",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 674100,
+      "name": "ARMY HOSPITAL BASISTHA",
+      "address": "BASISTHA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781029,
+      "lat": 0,
+      "long": 0,
+      "from": "09:00:00",
+      "to": "18:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "58f57e08-f35b-4cca-a8b9-3d24fcada22d",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-06:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694526,
+      "name": "NARAKASUR HS",
+      "address": "KAHILIPARA",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781034,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "0abf161d-450c-4aaf-b1f0-e643567b1867",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 699484,
+      "name": "MARWARI YUVA MANCH GUWAHATI",
+      "address": "BHARALUMUKH POLICE STATION",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781009,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "2a223298-79fa-4c1f-9f07-bb7b646435de",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 694541,
+      "name": "JAPORIGOG LP SCHOOL",
+      "address": "JAPORIGOG",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781005,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "0bb809ca-e49d-4c8a-9869-c08683cca1d7",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695946,
+      "name": "GOTANAGAR LP SCHOOL",
+      "address": "GOTANAGAR",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781011,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "32d46c0d-6426-471f-b455-22dd875bf785",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695952,
+      "name": "MALIGAON HIGH SCHOOL",
+      "address": "MALIGAON",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781011,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "467bd1e0-743d-4520-b3c1-5b4908d04e1b",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695937,
+      "name": "AMBARI HS",
+      "address": "FATASIL AMBARI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Dhirenpara Zone",
+      "pincode": 781025,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "79a94ae5-584f-4717-84eb-03c2ca564695",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 122884,
+      "name": "Red Cross Hospitals",
+      "address": "Chandmari",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "East Zone",
+      "pincode": 781003,
+      "lat": 0,
+      "long": 0,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "ae86efdf-f368-4511-a4c1-bfbb14df2171",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 45,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695648,
+      "name": "BARSAJAI HIGH SCHOOL",
+      "address": "BARSAJAI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "Capital Zone",
+      "pincode": 781029,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "53399a53-c15b-4b8f-91f7-c7d06d9e3a64",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    },
+    {
+      "center_id": 695943,
+      "name": "JALUKBARI GIRLS HIGH SCHOOL",
+      "address": "JALUKBARI",
+      "state_name": "Assam",
+      "district_name": "Kamrup Metropolitan",
+      "block_name": "West Zone",
+      "pincode": 781014,
+      "lat": 26,
+      "long": 91,
+      "from": "09:30:00",
+      "to": "14:00:00",
+      "fee_type": "Free",
+      "sessions": [
+        {
+          "session_id": "d0b7c5dc-d84f-41d2-9766-3fb0a9ddfb1c",
+          "date": "12-05-2021",
+          "available_capacity": 0,
+          "min_age_limit": 18,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:30AM-10:30AM",
+            "10:30AM-11:30AM",
+            "11:30AM-12:30PM",
+            "12:30PM-02:00PM"
+          ]
+        }
+      ]
+    }
+  ]
+}
