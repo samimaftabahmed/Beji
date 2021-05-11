@@ -56,13 +56,12 @@ function my(response) {
     console.log("Started: ", Date.now());
 
     for (let center of response.data.centers) {
-
-        let htmlTableRowElement = document.createElement("tr");
-
         for (let session of center.sessions) {
+
             // if (session.available_capacity > 0 && session.min_age_limit < 45) {
             if (true) {
                 playAudio();
+                let htmlTableRowElement = document.createElement("tr");
 
                 let name = document.createElement("td");
                 let address = document.createElement("td");

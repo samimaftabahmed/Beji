@@ -53,7 +53,7 @@
         </div>
 
         <!--        other information display column-->
-        <div class="col-3 offset-1">
+        <div class="col-3 offset-1" style="font-size: larger;">
             <div class="m-2 p-2" id="started" style="background-color: greenyellow; color: black; display: none;">
                 STARTED
             </div>
@@ -65,17 +65,17 @@
             <div class="row">
                 <div class="col-4">
                     Status 200:
-                    <br><br>
-                    <label id="successStatuses" style="color: greenyellow">0</label>
+                    <br>
+                    <label id="successStatuses" style="color: forestgreen">0</label>
                 </div>
                 <div class="col-4">
                     Status 300:
-                    <br><br>
+                    <br>
                     <label id="cachedStatuses" style="color: orange">0</label>
                 </div>
                 <div class="col-4">
                     Status 400+:
-                    <br><br>
+                    <br>
                     <label id="errorStatuses" style="color: red;">0</label>
                 </div>
             </div>
@@ -88,15 +88,15 @@
             <br>
             <div class="table-responsive">
                 <table class="table w-100 table-bordered table-striped" id="myTable">
-                    <thead>
+                    <thead class="thead-dark">
                     <tr>
-                        <td>Name</td>
-                        <td>Address</td>
-                        <td>Fee Type</td>
-                        <td>Age</td>
-                        <td>Vaccine</td>
-                        <td>Quantity</td>
-                        <td>Date</td>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Fee Type</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Vaccine</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Date</th>
                     </tr>
                     </thead>
 
