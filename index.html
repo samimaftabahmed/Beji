@@ -29,18 +29,19 @@
                 <source src="resources/music.mp3" type="audio/mpeg">
             </audio>
 
-<!--            passphrase div for limited access-->
+            <!--            passphrase div for limited access-->
             <div id="passphrase-div" style="display: block;">
                 <br>
                 <div class="form-group">
                     <input class="form-control" placeholder="Passphrase" type="text" id="pass">
                 </div>
-                <button class="btn btn-danger btn-block font-weight-bold" onclick="pass()">G E T &nbsp;&nbsp; I N</button>
+                <button class="btn btn-danger btn-block font-weight-bold" onclick="pass()">G E T &nbsp;&nbsp; I N
+                </button>
                 <br><br>
                 <br>
             </div>
 
-<!--            select column to be hidden during start-->
+            <!--            select column to be hidden during start-->
             <div class="form-group" id="hidden-select-column" style="display: none;">
                 <label for="state">Select State:</label>
                 <select class="form-control" name="state" id="state" onchange="getDistrict(2)">
@@ -55,26 +56,30 @@
         </div>
 
         <!--        button column -->
-        <div id="hidden-button-column" style="display: none" class="col-3 offset-1">
+        <div id="hidden-button-column" style="display: none;" class="col-3 offset-1">
 
             <div class="row m-0">
                 <div class="col">
                     <br>
-                    <button class="btn btn-outline-primary btn-block font-weight-bold">OK</button>
+                    <button class="btn btn-outline-primary btn-block font-weight-bold" id="btn-1">N/A</button>
                     <br>
-                    <button class="btn btn-outline-success btn-block font-weight-bold" onclick="myOK(0)">GHY: 18
+                    <button class="btn btn-outline-success btn-block font-weight-bold" id="btn-2" onclick="myOK(0)">
+                        GHY: 18
                     </button>
                     <br>
-                    <button class="btn btn-outline-success btn-block font-weight-bold" onclick="myOK(2)">GHY: 18 & 45
+                    <button class="btn btn-outline-success btn-block font-weight-bold" id="btn-3"
+                            onclick="myOK(2)">GHY:
+                        18 & 45
                     </button>
                 </div>
                 <div class="col">
                     <br>
-                    <button class="btn btn-outline-info btn-block font-weight-bold">SIB: 45</button>
+                    <button class="btn btn-outline-info btn-block font-weight-bold" id="btn-4">SIB: 45</button>
                     <br>
-                    <button class="btn btn-outline-info btn-block font-weight-bold">SIB: 18</button>
+                    <button class="btn btn-outline-info btn-block font-weight-bold" id="btn-5">SIB: 18</button>
                     <br>
-                    <button class="btn btn-outline-success btn-block font-weight-bold" onclick="myOK(1)">GHY: 45
+                    <button class="btn btn-outline-success btn-block font-weight-bold" id="btn-6" onclick="myOK(1)">
+                        GHY: 45
                     </button>
                 </div>
             </div>
@@ -83,7 +88,7 @@
         </div>
 
         <!--        other information display column-->
-        <div id="hidden-info-column"  class="col-3 offset-1" style="display: none;font-size: larger;">
+        <div id="hidden-info-column" class="col-3 offset-1" style="display: none;font-size: larger;">
             <div class="p-2" id="started"
                  style="background-color: #444444; color: lightgreen; display: none; text-align: center; ">
                 STARTED

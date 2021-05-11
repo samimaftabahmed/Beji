@@ -20,18 +20,23 @@ window.onload = function () {
 };
 
 function myOK(age) {
+
+    disableButtonsAndSelects();
     ageCode = parseInt(age);
     let started = document.getElementById("started");
     started.style.cssText = "background-color: #444444; color: lightgreen; display: block; text-align: center; "
-
-    console.log("myOK ", new Date());
+    // console.log("myOK ", new Date());
     let today = moment().format('DD-MM-YYYY');
+
+    // Cached urls
     // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=49&date=" + today;
     // let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=50&date=" + today;
+
+    // Uncached urls
     let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=49&date=" + today;
     // let url2 = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByDistrict?district_id=50&date=" + today;
 
-    // let url = "resources/test-response.json";
+    // let url = "resources/test-response.json"; // test-json
 
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
@@ -128,7 +133,7 @@ function choiceResponse(response, choice) {
 
 function processState(response) {
     let stateSelect = document.getElementById("state");
-    console.log(response);
+    // console.log(response);
     for (let eachState of response.data.states) {
         addOptions(stateSelect, eachState.state_name, eachState.state_id);
     }
@@ -136,7 +141,7 @@ function processState(response) {
 
 function processDistrict(response) {
     let districtSelect = document.getElementById("district");
-    console.log(response);
+    // console.log(response);
     districtSelect.children = null;
     for (let district of response.data.districts) {
         addOptions(districtSelect, district.district_name, district.district_id);
@@ -155,19 +160,19 @@ function getState() {
 function getDistrict(choice) {
     if (choice === 1) {
         let url = "resources/districts.json";
-        console.log("url: ", url);
+        // console.log("url: ", url);
         makeRequest(url, 2);
 
     } else if (choice === 2) {
         let stateSelect = document.getElementById("state");
         let url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/" + stateSelect.value;
-        console.log("url: ", url);
+        // console.log("url: ", url);
         makeRequest(url, 2);
     }
 }
 
 function getMain() {
-    console.log("From main:");
+    // console.log("From main:");
     let url = "resources/state.json";
 
     setInterval(function () {
@@ -214,7 +219,7 @@ Choices:
 3 - main
 */
 function makeRequest(url, choice) {
-    console.log(url);
+    // console.log(url);
     let myheaders = {
         "accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
@@ -232,5 +237,27 @@ function makeRequest(url, choice) {
         .finally(function () {
             setTotalRequestCount();
         });
+}
+
+function disableButtonsAndSelects() {
+    let btn1 = document.getElementById("btn-1");
+    let btn2 = document.getElementById("btn-2");
+    let btn3 = document.getElementById("btn-3");
+    let btn4 = document.getElementById("btn-4");
+    let btn5 = document.getElementById("btn-5");
+    let btn6 = document.getElementById("btn-6");
+    let stateSelect = document.getElementById("state");
+    let districtSelect = document.getElementById("district");
+    let hiddenBtnCol = document.getElementById("hidden-button-column");
+
+    btn1.disabled = true;
+    btn2.disabled = true;
+    btn3.disabled = true;
+    btn4.disabled = true;
+    btn5.disabled = true;
+    btn6.disabled = true;
+    hiddenBtnCol.style.cssText = "display: block; background-color: #eeeeee;"
+    stateSelect.disabled = true;
+    districtSelect.disabled = true;
 }
 
