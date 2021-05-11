@@ -20,7 +20,7 @@ window.onload = function () {
 };
 
 function myOK(age) {
-    ageCode = age;
+    ageCode = parseInt(age);
     let started = document.getElementById("started");
     started.style.cssText = "background-color: greenyellow; color: black; display: block;"
 
@@ -56,15 +56,15 @@ function my(response) {
     for (let center of response.data.centers) {
         for (let session of center.sessions) {
 
-            let age = session.min_age_limit;
+            let age = parseInt(session.min_age_limit);
 
             // if (session.available_capacity > 0) {
             if (true) {
                 playAudio();
 
-                if (ageCode === 0 && age < 45 && age >= 18) {
+                if (ageCode === 0 && age === 18) {
                     rowCreator(center, session);
-                } else if (ageCode === 1 && age >= 45) {
+                } else if (ageCode === 1 && age === 45) {
                     rowCreator(center, session);
                 } else {
                     rowCreator(center, session);
