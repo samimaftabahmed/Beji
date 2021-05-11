@@ -19,35 +19,63 @@
 <br>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6 offset-3">
-
-            <div class="m-2 p-2" id="started" style="background-color: greenyellow; color: black; display: none;">
-                STARTED
-            </div>
-
+        <!--         select-box column -->
+        <div class="col-2 offset-1">
             <audio id="myAudio" controls loop style="display: none;">
                 <source src="resources/music.mp3" type="audio/mpeg">
             </audio>
 
-            <div id="show-div" style="display: block">
+            <div class="form-group" id="show-div" style="display: none;">
                 <label for="pass">Passphrase:</label>
-                <input type="text" id="pass">
+                <input class="form-control" type="text" id="pass">
                 <button onclick="pass()">OK</button>
             </div>
-            <div id="hidden-div" style="display: none">
+            <div class="form-group" id="hidden-div" style="display: block;">
                 <label for="state">Select State:</label>
-                <select name="state" id="state" onchange="getDistrict(2)">
+                <select class="form-control" name="state" id="state" onchange="getDistrict(2)">
                     <option selected>Select state</option>
                 </select>
                 <br> <br>
                 <label for="district">Select District:</label>
-                <select name="district" id="district">
+                <select class="form-control" name="district" id="district">
                     <option selected>Select district</option>
                 </select>
-                <br> <br>
-                <button class="btn btn-outline-primary">OK</button>
-                <button class="btn btn-outline-success" onclick="myOK()">My OK</button>
             </div>
+        </div>
+
+        <!--        button column -->
+        <div class="col-1 offset-1">
+            <br>
+            <button class="btn btn-outline-primary btn-block">OK</button>
+            <br>
+            <button class="btn btn-outline-success btn-block" onclick="myOK()">Ghy OK</button>
+            <br>
+            <button class="btn btn-outline-info btn-block" onclick="myOK()">Sib OK</button>
+        </div>
+
+        <!--        other information display column-->
+        <div class="col-3 offset-1">
+            <div class="m-2 p-2" id="started" style="background-color: greenyellow; color: black; display: none;">
+                STARTED
+            </div>
+            <br>
+            <div>
+                Number of requests done: <label>0</label>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    Success Requests
+                    <br><br>
+                    <label>5</label>
+                </div>
+                <div class="col-6">
+                    Failed Requests
+                    <br><br>
+                    <label>1</label>
+                </div>
+            </div>
+
         </div>
     </div>
 

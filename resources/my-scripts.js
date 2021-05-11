@@ -10,13 +10,6 @@ function pauseAudio() {
 }
 
 window.onload = function () {
-    // 'Cache-Control': 'no-cache',
-    // axios.defaults.headers = {
-    //     'Pragma': 'no-cache',
-    //     'Expires': '0',
-    //     "accept": "application/json, text/plain, */*",
-    //     "Content-Type": "application/json",
-    // };
     getState();
     getDistrict(1);
 };
@@ -35,7 +28,7 @@ function myOK() {
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
 
-    let timeout = (1 * 60 * 1000) + 1; // minutes * seconds * milli + milli
+    let timeout = (0.5 * 60 * 1000) + 1; // minutes * seconds * milli + milli
     setInterval(function () {
         makeRequest(url, 4);
 //        makeRequest(url2, 4);
@@ -55,13 +48,15 @@ function pass() {
 function my(response) {
     console.log("Processing response myOK:")
 
+    console.log("Started: ", new Date());
+
     for (let center of response.data.centers) {
 
         let htmlTableRowElement = document.createElement("tr");
 
         for (let session of center.sessions) {
-            if (session.available_capacity > 0 && session.min_age_limit < 45) {
-
+            // if (session.available_capacity > 0 && session.min_age_limit < 45) {
+            if (true) {
                 playAudio();
 
                 let name = document.createElement("td");
@@ -90,6 +85,8 @@ function my(response) {
         }
         myTAble.appendChild(htmlTableRowElement);
     }
+
+    console.log("Ended: ", new Date());
 }
 
 
