@@ -86,9 +86,9 @@ function my(response) {
                 htmlTableRowElement.appendChild(vaccine);
                 htmlTableRowElement.appendChild(quantity);
                 htmlTableRowElement.appendChild(onDate);
+                myTAble.appendChild(htmlTableRowElement);
             }
         }
-        myTAble.appendChild(htmlTableRowElement);
     }
 
     console.log("Ended: ", Date.now());
