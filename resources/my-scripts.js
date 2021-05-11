@@ -63,25 +63,27 @@ function my(response) {
                 let name = document.createElement("td");
                 let address = document.createElement("td");
                 let feeType = document.createElement("td");
-                name.textContent = center.name;
-                address.textContent = center.address;
-                feeType.textContent = center.fee_type;
-                htmlTableRowElement.appendChild(name);
-                htmlTableRowElement.appendChild(address);
-                htmlTableRowElement.appendChild(feeType);
-
                 let age = document.createElement("td");
                 let vaccine = document.createElement("td");
                 let quantity = document.createElement("td");
                 let onDate = document.createElement("td");
+
+                name.textContent = center.name;
+                address.textContent = center.address;
+                feeType.textContent = center.fee_type;
                 age.textContent = session.min_age_limit + "+";
                 vaccine.textContent = session.vaccine;
                 quantity.textContent = session.available_capacity;
+                quantity.style.cssText = "quantity-highlight";
                 onDate.textContent = session.date;
-                htmlTableRowElement.appendChild(age);
-                htmlTableRowElement.appendChild(vaccine);
+
+                htmlTableRowElement.appendChild(name);
+                htmlTableRowElement.appendChild(address);
                 htmlTableRowElement.appendChild(quantity);
+                htmlTableRowElement.appendChild(vaccine);
+                htmlTableRowElement.appendChild(age);
                 htmlTableRowElement.appendChild(onDate);
+                htmlTableRowElement.appendChild(feeType);
                 myTAble.appendChild(htmlTableRowElement);
             }
         }
