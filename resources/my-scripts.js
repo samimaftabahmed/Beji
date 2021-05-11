@@ -19,10 +19,10 @@ window.onload = function () {
     getDistrict(1);
 };
 
-function myOK(age) {
+function myOK(ageCodeFromButton) {
 
-    disableButtonsAndSelects();
-    ageCode = parseInt(age);
+    ageCode = parseInt(ageCodeFromButton);
+    afterBtnClickOperations();
     let started = document.getElementById("started");
     started.style.cssText = "background-color: #444444; color: lightgreen; display: block; text-align: center; "
     // console.log("myOK ", new Date());
@@ -239,7 +239,7 @@ function makeRequest(url, choice) {
         });
 }
 
-function disableButtonsAndSelects() {
+function afterBtnClickOperations() {
     let btn1 = document.getElementById("btn-1");
     let btn2 = document.getElementById("btn-2");
     let btn3 = document.getElementById("btn-3");
@@ -249,7 +249,9 @@ function disableButtonsAndSelects() {
     let stateSelect = document.getElementById("state");
     let districtSelect = document.getElementById("district");
     let hiddenBtnCol = document.getElementById("hidden-button-column");
+    let ageGroupSelected = document.getElementById("age_group_selected");
 
+    // disable buttons and select
     btn1.disabled = true;
     btn2.disabled = true;
     btn3.disabled = true;
@@ -259,5 +261,19 @@ function disableButtonsAndSelects() {
     hiddenBtnCol.style.cssText = "display: block; background-color: #eeeeee;"
     stateSelect.disabled = true;
     districtSelect.disabled = true;
+
+    console.log("agecode from disabled ", ageCode);
+    // view the age group
+    switch (ageCode) {
+        case 0:
+            ageGroupSelected.textContent = "18+";
+            break;
+        case 1:
+            ageGroupSelected.textContent = "45+";
+            break;
+        case 2:
+            ageGroupSelected.textContent = "18 - 45";
+            break;
+    }
 }
 
