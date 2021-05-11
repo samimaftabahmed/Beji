@@ -48,7 +48,7 @@ function pass() {
 function my(response) {
     console.log("Processing response myOK:")
 
-    console.log("Started: ", new Date());
+    console.log("Started: ", Date.now());
 
     for (let center of response.data.centers) {
 
@@ -86,7 +86,7 @@ function my(response) {
         myTAble.appendChild(htmlTableRowElement);
     }
 
-    console.log("Ended: ", new Date());
+    console.log("Ended: ", Date.now());
 }
 
 
