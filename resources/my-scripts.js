@@ -1,5 +1,5 @@
 let myTAble = document.getElementById("mybody");
-var audioPlayer = document.getElementById("myAudio");
+let audioPlayer = document.getElementById("myAudio");
 
 function playAudio() {
     audioPlayer.play();
