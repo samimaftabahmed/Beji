@@ -4,7 +4,7 @@ let successStatuses = document.getElementById("successStatuses");
 let cachedStatuses = document.getElementById("cachedStatuses");
 let errorStatuses = document.getElementById("errorStatuses");
 let totalRequestCount = document.getElementById("totalRequestCount");
-
+let ageCode = 0;
 
 function playAudio() {
     audioPlayer.play();
@@ -19,7 +19,8 @@ window.onload = function () {
     getDistrict(1);
 };
 
-function myOK() {
+function myOK(age) {
+    ageCode = age;
     let started = document.getElementById("started");
     started.style.cssText = "background-color: greenyellow; color: black; display: block;"
 
@@ -55,39 +56,79 @@ function my(response) {
     for (let center of response.data.centers) {
         for (let session of center.sessions) {
 
-            // if (session.available_capacity > 0 && session.min_age_limit < 45) {
+            let age = session.min_age_limit;
+
+            // if (session.available_capacity > 0) {
             if (true) {
                 playAudio();
-                let htmlTableRowElement = document.createElement("tr");
 
-                let name = document.createElement("td");
-                let address = document.createElement("td");
-                let feeType = document.createElement("td");
-                let age = document.createElement("td");
-                let vaccine = document.createElement("td");
-                let quantity = document.createElement("td");
-                let onDate = document.createElement("td");
+                if (ageCode === 0 && age < 45 && age >= 18) {
+                    rowCreator(center, session);
+                } else if (ageCode === 1 && age >= 45) {
+                    rowCreator(center, session);
+                } else {
+                    rowCreator(center, session);
+                }
 
-                name.textContent = center.name;
-                address.textContent = center.address;
-                feeType.textContent = center.fee_type;
-                age.textContent = session.min_age_limit + "+";
-                vaccine.textContent = session.vaccine;
-                quantity.textContent = session.available_capacity;
-                quantity.style.cssText = "quantity-highlight";
-                onDate.textContent = session.date;
 
-                htmlTableRowElement.appendChild(name);
-                htmlTableRowElement.appendChild(address);
-                htmlTableRowElement.appendChild(quantity);
-                htmlTableRowElement.appendChild(vaccine);
-                htmlTableRowElement.appendChild(age);
-                htmlTableRowElement.appendChild(onDate);
-                htmlTableRowElement.appendChild(feeType);
-                myTAble.appendChild(htmlTableRowElement);
+                // let htmlTableRowElement = document.createElement("tr");
+                // let name = document.createElement("td");
+                // let address = document.createElement("td");
+                // let feeType = document.createElement("td");
+                // let age = document.createElement("td");
+                // let vaccine = document.createElement("td");
+                // let quantity = document.createElement("td");
+                // let onDate = document.createElement("td");
+                //
+                // name.textContent = center.name;
+                // address.textContent = center.address;
+                // feeType.textContent = center.fee_type;
+                // age.textContent = session.min_age_limit + "+";
+                // vaccine.textContent = session.vaccine;
+                // quantity.textContent = session.available_capacity;
+                // quantity.style.cssText = "quantity-highlight";
+                // onDate.textContent = session.date;
+                //
+                // htmlTableRowElement.appendChild(name);
+                // htmlTableRowElement.appendChild(address);
+                // htmlTableRowElement.appendChild(quantity);
+                // htmlTableRowElement.appendChild(vaccine);
+                // htmlTableRowElement.appendChild(age);
+                // htmlTableRowElement.appendChild(onDate);
+                // htmlTableRowElement.appendChild(feeType);
+                // myTAble.appendChild(htmlTableRowElement);
             }
         }
     }
+}
+
+function rowCreator(center, session) {
+    let htmlTableRowElement = document.createElement("tr");
+    let name = document.createElement("td");
+    let address = document.createElement("td");
+    let feeType = document.createElement("td");
+    let age = document.createElement("td");
+    let vaccine = document.createElement("td");
+    let quantity = document.createElement("td");
+    let onDate = document.createElement("td");
+
+    name.textContent = center.name;
+    address.textContent = center.address;
+    feeType.textContent = center.fee_type;
+    age.textContent = session.min_age_limit + "+";
+    vaccine.textContent = session.vaccine;
+    quantity.textContent = session.available_capacity;
+    quantity.style.cssText = "quantity-highlight";
+    onDate.textContent = session.date;
+
+    htmlTableRowElement.appendChild(name);
+    htmlTableRowElement.appendChild(address);
+    htmlTableRowElement.appendChild(quantity);
+    htmlTableRowElement.appendChild(vaccine);
+    htmlTableRowElement.appendChild(age);
+    htmlTableRowElement.appendChild(onDate);
+    htmlTableRowElement.appendChild(feeType);
+    myTAble.appendChild(htmlTableRowElement);
 }
 
 
