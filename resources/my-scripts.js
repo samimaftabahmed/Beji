@@ -46,10 +46,15 @@ function myOK(age) {
 function pass() {
     let pass = document.getElementById("pass");
     if (pass.value === "zang") {
-        let hiddenDiv = document.getElementById("hidden-div");
-        let showDiv = document.getElementById("show-div");
-        hiddenDiv.style.cssText = "display: block;";
-        showDiv.style.cssText = "display: none;";
+        let hiddenSelectCol = document.getElementById("hidden-select-column");
+        let hiddenInfoCol = document.getElementById("hidden-info-column");
+        let hiddenButtonCol = document.getElementById("hidden-button-column");
+        let passphraseDiv = document.getElementById("passphrase-div");
+
+        hiddenSelectCol.style.cssText = "display: block;";
+        hiddenInfoCol.style.cssText = "display: block; font-size: larger;";
+        hiddenButtonCol.style.cssText = "display: block;";
+        passphraseDiv.style.cssText = "display: none;";
     }
 }
 
@@ -103,7 +108,6 @@ function rowCreator(center, session) {
     htmlTableRowElement.appendChild(feeType);
     myTAble.appendChild(htmlTableRowElement);
 }
-
 
 function choiceResponse(response, choice) {
     switch (choice) {
