@@ -70,8 +70,8 @@ function my(response) {
 
             let age = parseInt(session.min_age_limit);
 
-            // if (session.available_capacity > 0) {
-            if (true) {
+            if (session.available_capacity > 0) {
+                // if (true) {
                 playAudio();
                 if (ageCode === 0 && age === 18) {
                     rowCreator(center, session);
