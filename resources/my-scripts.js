@@ -51,9 +51,6 @@ function pass() {
 }
 
 function my(response) {
-    console.log("Processing response myOK:")
-
-    console.log("Started: ", Date.now());
 
     for (let center of response.data.centers) {
         for (let session of center.sessions) {
@@ -89,8 +86,6 @@ function my(response) {
             }
         }
     }
-
-    console.log("Ended: ", Date.now());
 }
 
 
@@ -133,13 +128,11 @@ function processMain(response) {
 }
 
 function getState() {
-    console.log("From state:");
     let url = "resources/state.json";
     makeRequest(url, 1);
 }
 
 function getDistrict(choice) {
-    console.log("From district:");
     if (choice === 1) {
         let url = "resources/districts.json";
         console.log("url: ", url);
@@ -170,7 +163,6 @@ function addOptions(element, text, value) {
 }
 
 function setTotalRequestCount() {
-    console.log("Total Count set");
     let text = totalRequestCount.textContent;
     text = parseInt(text) + 1;
     totalRequestCount.textContent = text;
@@ -178,7 +170,6 @@ function setTotalRequestCount() {
 
 function setStatusCount(code) {
 
-    console.log("Parsed Status: " + code);
     code = parseInt(code);
 
     if (code >= 200 && code < 300) {
