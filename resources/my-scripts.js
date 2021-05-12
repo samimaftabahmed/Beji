@@ -41,7 +41,7 @@ function myOK(ageCodeFromButton) {
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
 
-    let timeout = 15 * 1000; // seconds * millis
+    let timeout = 10 * 1000; // seconds * millis
 
     setTimeout(function recursiveDelay() {
         console.log("request at: ", new Date());
