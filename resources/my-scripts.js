@@ -41,10 +41,13 @@ function myOK(ageCodeFromButton) {
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
 
-    let timeout = (0.5 * 60 * 1000) + 1; // minutes * seconds * milli + milli
-    setInterval(function () {
+    let timeout = 30 * 1000; // seconds * millis
+
+    setTimeout(function recursiveDelay() {
         makeRequest(url, 4);
 //        makeRequest(url2, 4);
+        let variableDelay = timeout + (randomNumber(0, 4) * 1000);
+        setTimeout(recursiveDelay, variableDelay);
     }, timeout);
 }
 
@@ -226,7 +229,7 @@ function makeRequest(url, choice) {
     }
     axios.get(url, {headers: myheaders})
         .then(function (response) {
-            console.log("request success");
+            // console.log("request success");
             setStatusCount(response.status);
             choiceResponse(response, choice);
         })
@@ -262,7 +265,7 @@ function afterBtnClickOperations() {
     stateSelect.disabled = true;
     districtSelect.disabled = true;
 
-    console.log("agecode from disabled ", ageCode);
+    // console.log("agecode from disabled ", ageCode);
     // view the age group
     switch (ageCode) {
         case 0:
@@ -275,5 +278,9 @@ function afterBtnClickOperations() {
             ageGroupSelected.textContent = "18 - 45";
             break;
     }
+}
+
+function randomNumber(min, max) {
+    return parseInt((Math.random() * (max - min) + min));
 }
 
