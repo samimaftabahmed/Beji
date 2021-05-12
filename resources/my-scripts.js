@@ -5,9 +5,13 @@ let cachedStatuses = document.getElementById("cachedStatuses");
 let errorStatuses = document.getElementById("errorStatuses");
 let totalRequestCount = document.getElementById("totalRequestCount");
 let ageCode = 0;
+let audioPlaying = false;
 
 function playAudio() {
-    audioPlayer.play();
+    if (!audioPlaying) {
+        audioPlayer.play();
+    }
+    audioPlaying = true;
 }
 
 function pauseAudio() {
@@ -44,6 +48,7 @@ function myOK(ageCodeFromButton) {
     let timeout = 30 * 1000; // seconds * millis
 
     setTimeout(function recursiveDelay() {
+        console.log("request at: ", new Date());
         makeRequest(url, 4);
 //        makeRequest(url2, 4);
         let variableDelay = timeout + (randomNumber(0, 4) * 1000);
@@ -75,7 +80,7 @@ function my(response) {
 
             if (session.available_capacity > 0) {
                 // if (true) {
-                playAudio();
+
                 if (ageCode === 0 && age === 18) {
                     rowCreator(center, session);
                 } else if (ageCode === 1 && age === 45) {
@@ -89,6 +94,7 @@ function my(response) {
 }
 
 function rowCreator(center, session) {
+    playAudio();
     let htmlTableRowElement = document.createElement("tr");
     let name = document.createElement("td");
     let address = document.createElement("td");
