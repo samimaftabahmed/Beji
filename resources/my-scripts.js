@@ -281,7 +281,7 @@ function afterBtnClickOperations() {
             ageGroupSelected.textContent = "45+";
             break;
         case 2:
-            ageGroupSelected.textContent = "18 - 45";
+            ageGroupSelected.textContent = "18+ & 45+";
             break;
     }
 }
