@@ -251,7 +251,7 @@ function makeRequest(url, choice) {
         })
         .catch(function (error) {
             setStatusCount(error.response.status);
-            console.log("request failed: ", error.response);
+            console.error("request failed: ", error.response);
         })
         .finally(function () {
             setTotalRequestCount();
