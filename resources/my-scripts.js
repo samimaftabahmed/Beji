@@ -15,8 +15,8 @@ function playAudio() {
 }
 
 function pauseAudio() {
-    audioPlaying = false;
     audioPlayer.pause();
+    audioPlaying = false;
 }
 
 window.onload = function () {
@@ -46,7 +46,7 @@ function myOK(ageCodeFromButton) {
     makeRequest(url, 4);
 //    makeRequest(url2, 4);
 
-    let timeout = 30 * 1000; // seconds * millis
+    let timeout = 15 * 1000; // seconds * millis
 
     setTimeout(function recursiveDelay() {
         console.log("request at: ", new Date());
@@ -74,28 +74,43 @@ function pass() {
 
 function my(response) {
 
+    myTAble.innerHTML = "";
+    let noVaccineFlag = true;
     for (let center of response.data.centers) {
         for (let session of center.sessions) {
 
             let age = parseInt(session.min_age_limit);
-
             if (session.available_capacity > 0) {
                 // if (true) {
 
                 if (ageCode === 0 && age === 18) {
-                    rowCreator(center, session);
+                    noVaccineFlag = false;
+                    dataExtractor(center, session);
                 } else if (ageCode === 1 && age === 45) {
-                    rowCreator(center, session);
+                    noVaccineFlag = false;
+                    dataExtractor(center, session);
                 } else if (ageCode === 2) {
-                    rowCreator(center, session);
+                    noVaccineFlag = false;
+                    dataExtractor(center, session);
                 }
             }
         }
     }
+    if (noVaccineFlag) {
+        pauseAudio();
+        let data = "N/A";
+        rowCreator(data, data, data, data, data, data, data);
+    }
 }
 
-function rowCreator(center, session) {
+function dataExtractor(center, session) {
     playAudio();
+    rowCreator(center.name, center.address, center.fee_type, (session.min_age_limit + "+"),
+        session.vaccine, session.available_capacity, session.date);
+}
+
+
+function rowCreator(centerName, centerAddress, vaccineFeeType, minAgeLimit, vaccineType, availableQuantity, date) {
     let htmlTableRowElement = document.createElement("tr");
     let name = document.createElement("td");
     let address = document.createElement("td");
@@ -105,14 +120,14 @@ function rowCreator(center, session) {
     let quantity = document.createElement("td");
     let onDate = document.createElement("td");
 
-    name.textContent = center.name;
-    address.textContent = center.address;
-    feeType.textContent = center.fee_type;
-    age.textContent = session.min_age_limit + "+";
-    vaccine.textContent = session.vaccine;
-    quantity.textContent = session.available_capacity;
+    name.textContent = centerName;
+    address.textContent = centerAddress;
+    feeType.textContent = vaccineFeeType;
+    age.textContent = minAgeLimit;
+    vaccine.textContent = vaccineType;
+    quantity.textContent = availableQuantity;
     quantity.className = "quantity-highlight";
-    onDate.textContent = session.date;
+    onDate.textContent = date;
 
     htmlTableRowElement.appendChild(name);
     htmlTableRowElement.appendChild(address);
