@@ -5,18 +5,13 @@ let cachedStatuses = document.getElementById("cachedStatuses");
 let errorStatuses = document.getElementById("errorStatuses");
 let totalRequestCount = document.getElementById("totalRequestCount");
 let ageCode = 0;
-let audioPlaying = false;
 
 function playAudio() {
-    if (!audioPlaying) {
-        audioPlayer.play();
-    }
-    audioPlaying = true;
+    audioPlayer.play();
 }
 
 function pauseAudio() {
     audioPlayer.pause();
-    audioPlaying = false;
 }
 
 window.onload = function () {
@@ -108,7 +103,6 @@ function dataExtractor(center, session) {
     rowCreator(center.name, center.address, center.fee_type, (session.min_age_limit + "+"),
         session.vaccine, session.available_capacity, session.date);
 }
-
 
 function rowCreator(centerName, centerAddress, vaccineFeeType, minAgeLimit, vaccineType, availableQuantity, date) {
     let htmlTableRowElement = document.createElement("tr");
