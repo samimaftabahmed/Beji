@@ -47,7 +47,7 @@ function myOK(ageCodeFromButton) {
         console.log("request at: ", new Date());
         makeRequest(url, 4);
 //        makeRequest(url2, 4);
-        let variableDelay = timeout + (randomNumber(0, 4) * 1000);
+        let variableDelay = timeout + (randomNumber(0, 3) * 1000);
         setTimeout(recursiveDelay, variableDelay);
     }, timeout);
 }
