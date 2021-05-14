@@ -112,7 +112,7 @@ function rowCreator(centerName, centerAddress, vaccineFeeType, minAgeLimit, vacc
     let age = document.createElement("td");
     let vaccine = document.createElement("td");
     let quantity = document.createElement("td");
-    let onDate = document.createElement("td");
+    // let onDate = document.createElement("td");
 
     name.textContent = centerName;
     address.textContent = centerAddress;
@@ -121,14 +121,14 @@ function rowCreator(centerName, centerAddress, vaccineFeeType, minAgeLimit, vacc
     vaccine.textContent = vaccineType;
     quantity.textContent = availableQuantity;
     quantity.className = "quantity-highlight";
-    onDate.textContent = date;
+    // onDate.textContent = date;
 
     htmlTableRowElement.appendChild(name);
     htmlTableRowElement.appendChild(address);
     htmlTableRowElement.appendChild(quantity);
     htmlTableRowElement.appendChild(vaccine);
     htmlTableRowElement.appendChild(age);
-    htmlTableRowElement.appendChild(onDate);
+    // htmlTableRowElement.appendChild(onDate);
     htmlTableRowElement.appendChild(feeType);
     myTAble.appendChild(htmlTableRowElement);
 }

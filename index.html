@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="resources/bootstrap.css">
 
     <style>
-        .table-responsive {
-            display: table !important;
-        }
-
         .quantity-highlight {
             background-color: #81D4FA !important;
             font-weight: bold;
+        }
+
+        .info-font{
+            font-size: medium;
         }
     </style>
 </head>
@@ -91,7 +91,7 @@
 
         <!--        other information display column-->
         <div id="hidden-info-column" class="col-lg-3 col-md-12 col-sm-12 offset-lg-1"
-             style="display: none;font-size: larger;">
+             style="display: none;">
 
             <div class="row">
                 <div class="col-sm-12 col-sm-12">
@@ -117,18 +117,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    Status 200:
+                <div class="col border">
+                    Status 200
                     <br>
                     <label id="successStatuses" style="color: forestgreen">0</label>
                 </div>
-                <div class="col">
-                    Status 300:
+                <div class="col border">
+                    Status 300
                     <br>
                     <label id="cachedStatuses" style="color: orange">0</label>
                 </div>
-                <div class="col">
-                    Status 400+:
+                <div class="col border">
+                    Status 400+
                     <br>
                     <label id="errorStatuses" style="color: red;">0</label>
                 </div>
@@ -149,7 +149,7 @@
                         <th scope="col">Quantity</th>
                         <th scope="col">Vaccine</th>
                         <th scope="col">Age</th>
-                        <th scope="col">Date</th>
+<!--                        <th scope="col">Date</th>-->
                         <th scope="col">Fee Type</th>
                     </tr>
                     </thead>
