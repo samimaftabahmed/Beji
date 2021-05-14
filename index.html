@@ -24,7 +24,7 @@
 <div class="container-fluid">
     <div class="row">
         <!--         select-box column -->
-        <div class="col-2 offset-1">
+        <div class="col-lg-2 col-md-12 col-sm-12 offset-lg-1">
             <audio id="myAudio" controls loop style="display: none;">
                 <source src="resources/music.mp3" type="audio/mpeg">
             </audio>
@@ -56,7 +56,7 @@
         </div>
 
         <!--        button column -->
-        <div id="hidden-button-column" style="display: none;" class="col-3 offset-1">
+        <div id="hidden-button-column" style="display: none;" class="col-lg-3 col-md-12 col-sm-12 offset-lg-1">
 
             <div class="row m-0">
                 <div class="col">
@@ -74,9 +74,11 @@
                 </div>
                 <div class="col">
                     <br>
-                    <button class="btn btn-outline-info btn-block font-weight-bold disabled" id="btn-4">SIB: 45+</button>
+                    <button class="btn btn-outline-info btn-block font-weight-bold disabled" id="btn-4">SIB: 45+
+                    </button>
                     <br>
-                    <button class="btn btn-outline-info btn-block font-weight-bold disabled" id="btn-5">SIB: 18+</button>
+                    <button class="btn btn-outline-info btn-block font-weight-bold disabled" id="btn-5">SIB: 18+
+                    </button>
                     <br>
                     <button class="btn btn-outline-success btn-block font-weight-bold" id="btn-6" onclick="myOK(1)">
                         GHY: 45+
@@ -88,28 +90,44 @@
         </div>
 
         <!--        other information display column-->
-        <div id="hidden-info-column" class="col-3 offset-1" style="display: none;font-size: larger;">
-            <div class="p-2" id="started"
-                 style="background-color: #444444; color: lightgreen; display: none; text-align: center;">
-                STARTED &nbsp; FOR &nbsp; [ <label id="age_group_selected">age_group</label> ]
-            </div>
-            <br>
-            <div>
-                Number of requests done: &nbsp; <label id="totalRequestCount">0</label>
-            </div>
-            <br>
+        <div id="hidden-info-column" class="col-lg-3 col-md-12 col-sm-12 offset-lg-1"
+             style="display: none;font-size: larger;">
+
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-sm-12">
+                    &nbsp;
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="p-2" id="started"
+                         style="background-color: #444444; color: lightgreen; display: none; text-align: center;">
+                        STARTED &nbsp; FOR &nbsp; [ <label id="age_group_selected">age_group</label> ]
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Number of requests done: &nbsp; <label id="totalRequestCount">0</label>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     Status 200:
                     <br>
                     <label id="successStatuses" style="color: forestgreen">0</label>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     Status 300:
                     <br>
                     <label id="cachedStatuses" style="color: orange">0</label>
                 </div>
-                <div class="col-4">
+                <div class="col">
                     Status 400+:
                     <br>
                     <label id="errorStatuses" style="color: red;">0</label>
