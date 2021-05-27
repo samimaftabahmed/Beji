@@ -75,7 +75,7 @@ function my(response) {
         for (let session of center.sessions) {
 
             let age = parseInt(session.min_age_limit);
-            if (session.available_capacity > 0) {
+            if (session.available_capacity > 5) {
                 // if (true) {
 
                 if (ageCode === 0 && age === 18) {
